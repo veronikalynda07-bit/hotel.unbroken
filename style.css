@@ -1,4 +1,9 @@
-/* ======== Глобальні стилі ======== */
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Marmelad&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Marmelad&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Great+Vibes&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Marmelad&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -7,16 +12,17 @@
 
 :root {
   --primary-color: brown;
-  --secondary-color: #ff6b6b;
+  --secondary-color: #e32c2c;
   --white: #ffffff;
   --text-dark: #333;
   --text-light: #666;
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "EB Garamond", serif;
   color: rgb(32, 4, 4);
   background: #f9f9f9;
+  font-size: 20px;
 }
 
 .no-scroll {
@@ -59,7 +65,7 @@ header {
 }
 
 .header__logo {
-  width: 195px;
+  width: 200px;
   height: 50px;
   cursor: pointer;
 }
@@ -81,17 +87,18 @@ header {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
+  font-family: "Play", sans-serif;
+
   letter-spacing: 1px;
   border-bottom: 2px solid transparent;
   transition: 0.4s;
   opacity: 0.8;
 }
 
-.header__nav a:hover,
-.header__nav a.active {
-  opacity: 1;
+.header__nav .a__list:hover,
+.header__nav  .active {
+  opacity: 0.8;
   color: var(--secondary-color);
-  border-bottom-color: var(--secondary-color);
 }
 
 /* ======== Кнопка бронювання ======== */
@@ -113,8 +120,9 @@ header {
 }
 
 .btn__book:hover {
-  background-color: var(--secondary-color);
   transform: translateY(-2px);
+  color: white;
+  opacity: 0.8;
 }
 
 /* ======== Бургер-кнопка ======== */
@@ -226,8 +234,8 @@ header {
 
 .mobile-menu ul li a {
   color: #f8f0e3;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 300;
   text-transform: capitalize;
   display: block;
   padding: 15px 0;
@@ -241,8 +249,8 @@ header {
 
 .mobile-menu .btn__book {
   margin-top: 40px;
-  font-size: 18px;
-  padding: 12px 25px;
+  font-size: 16px;
+  padding: 10px 20px;
 }
 
 /* ======== Адаптивність ======== */
@@ -259,10 +267,10 @@ header {
   .btn__book {
     width: 130px;
     height: 40px;
-    font-size: 14px;
+    font-size: 15px;
   }
   .mobile-menu ul li a {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -319,16 +327,25 @@ header {
 }
 
 .header__container p {
-  font-size: 1.2rem;
+  font-size: 20px;
   color: var(--white);
   opacity: 0.6;
+  font-family: "PT Sans Caption", sans-serif;
+
 }
 
 .header__container h1 {
-  font-size: 4rem;
   font-weight: 500;
-  line-height: 4.5rem;
-  color: var(--white);
+    font-family: "Arsenal SC", sans-serif;
+
+  padding-top: 40px;
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #f9e8d9;
+  animation: fadeInDown 1.2s ease-out;
 }
 
 .header__container h1 span {
@@ -336,99 +353,103 @@ header {
 }
 
 /* Форма бронювання */
+/* ===== Загальний контейнер ===== */
 .booking__container {
   width: 100%;
-  max-width: 1140px;
-  margin-top: 0 auto;
- padding: 0px 15px;
 
 }
 
+/* ===== Сама форма ===== */
 .booking__form {
-  padding: 20px;
-  display: flex;
-  gap: 40px;
-    max-width: 900px;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-color: white;
+  background: white;
+  padding: 30px 40px;
   border-radius: 15px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
-  margin-top: 200px; 
-  margin: 0 auto; /* вирівнювання по центру */
-  transform: none; /* прибрали -100%, щоб не наїжджало на заголовок */
-  
-}
- /*padding: 2rem;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.1);
   display: flex;
-  gap: 1rem;
   align-items: center;
   justify-content: center;
+  gap: 30px;
   flex-wrap: wrap;
-  background-color: var(--white);
-  border-radius: 10px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-
-
-}*/
- .input__group {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap:10px;
-  flex-direction: column;
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem; */
+  transition: all 0.3s ease;
 }
 
-.booking__container .input__group label {
+
+/* ===== Кожен елемент групи ===== */
+.input__group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.input__group label {
   font-weight: 500;
   font-size: 16px;
-
+  color: #333;
 }
 
+/* ===== Поля введення ===== */
 .input__group .input {
-  display: block;
-  width: 100%;
-  max-width: 150px;
-  color: var(--text-dark);
+  width: 200px;
+  padding: 10px 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
   font-size: 15px;
-  color:gray;
-  font-weight: 400;
-  padding: 3px 10px;
-  border: 1px solid brown;
-  line-height: 15px;
-  transition: all 1s;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.input__group .input:focus {
+  border-color: brown;
+  box-shadow: 0 0 5px rgba(165,42,42,0.3);
   outline: none;
 }
 
-
-.input__group .input:hover {
-
-  color:rgb(11, 11, 11);
-  border: 1px solid rgb(67, 62, 62);
- 
-}
-
+/* ===== Кнопка ===== */
 .btn {
   background: brown;
   color: white;
-  border: 1px solid #eee;
+  border: none;
   padding: 12px 30px;
-  border-radius: 10px;
-  cursor: pointer;
+  border-radius: 8px;
   font-size: 1rem;
-  transition: all 0.3s ease;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
-
 .btn:hover {
-  opacity: 0.8;
   transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* ====== Адаптивність для телефонів ====== */
+@media (max-width: 768px) {
+  .booking__form {
+    flex-direction: column; /* усе вниз */
+    align-items: stretch;
+    gap: 20px;
+    width: 100%;
+    padding: 25px 20px;
+  }
+
+  .booking__container{
+    max-width: 95%;
+    padding: 0 10px;
+  }
+
+  .input__group {
+    width: 100%;
+  }
+
+  .input__group .input {
+    width: 100%; /* розтягуємо поля */
+  }
+
+  .btn {
+    width: 100%; /* кнопка на всю ширину */
+    padding: 15px;
+    font-size: 18px;
+  }
 }
 
 
@@ -479,6 +500,7 @@ header {
   font-size: 3rem;
   letter-spacing: 5px;
   font-weight: 700;
+  
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
@@ -512,8 +534,8 @@ header {
   width: 100%;
   max-width: 350px;
   min-width: 280px;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px 10px 30px 30px;
   padding: 25px 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -527,9 +549,11 @@ header {
 
 .block1 h5 {
   color: brown;
-  font-size: 1.3rem;
+  font-size: 23px;
   margin-bottom: 15px;
   font-weight: 600;
+    font-family: "Marmelad", sans-serif;
+
 }
 
 .block1 ul {
@@ -539,11 +563,14 @@ header {
   text-align: left;
   color: #333;
   line-height: 1.6;
+  align-items: center;
+  
 }
 
 .block1 ul li {
   margin-bottom: 8px;
-  font-size: 1rem;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .line__block {
@@ -561,15 +588,16 @@ header {
   font-weight: bold;
   cursor: pointer;
   margin-top: 10px;
-  font-size: 1rem;
+  font-size: 18px;
   transition: color 0.3s ease;
   padding: 8px 16px;
-  border-radius: 5px;
+      font-family: "Marmelad", sans-serif;
+
 }
 
 .btn_lm:hover {
-  color: #ff6b6b;
-  background-color: rgba(165, 42, 42, 0.1);
+  color: #794444;
+  border: 2px solid #794444;
 }
 
 /* Адаптивність */
@@ -800,13 +828,12 @@ header {
 .footer__contacts {
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 
 .contact__item {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   padding: 8px 0;
 }
 
@@ -1004,26 +1031,35 @@ header {
   padding: 300px 0 5px;
 }
 
+
+
 .services__content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 50px; /* ✅ ВІДСТАНЬ між blok__header і block__text */
+  gap: 20px;
   width: 100%;
+  overflow: hidden;
+      margin: 0 auto;
+    padding: 20px;
 }
 
 .blok__header {
-  width: 400px;
-  background-color: #eee;
+  width: 300px;
+  background-color: #eeeeee9b;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 15px 50px;
-  border-radius: 10px;
+  padding: 10px 50px;
+  border-radius: 10px 30px 30px 10px;
 }
 
+.blok__header h1{
+    font-family: "PT Sans Caption", sans-serif;
+
+}
 .block__text {
-  background-color: #eee;
+  background-color: #eeeeee;
   text-align: left;
   padding: 40px 50px;
   border-radius: 10px;
@@ -1031,7 +1067,7 @@ header {
 }
 
 .block__text p {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.6;
   color: #333;
 }
@@ -1068,7 +1104,7 @@ header {
 
 .gallery__item img {
   width: 100%;  /* ✅ щоб зображення займало всю ширину картки */
-  height: 400px; /* можна змінити за потреби */
+  height: 300px; /* можна змінити за потреби */
   object-fit: cover;
   transition: transform 0.2s ease;
 }
@@ -1084,6 +1120,8 @@ header {
   transform: translate(-50%, -50%);
   text-align: center;
   opacity: 0;
+    font-family: "Great Vibes", cursive;
+  font-size: 30px;
   transition: opacity 0.4s ease, transform 0.4s ease;
   width: 80%;
 }
@@ -1137,7 +1175,7 @@ header {
   }
 
   .gallery__item img {
-    height: 500px; /* зменшуємо висоту на мобільних */
+    height: 300px; /* зменшуємо висоту на мобільних */
   }
   .gallery__item h5 {
     font-size: 20px;
@@ -1160,8 +1198,6 @@ header {
   justify-content: center;
   align-items: center;
   padding: 300px 0 4px;
-  font-family: Arial, sans-serif;
-  box-sizing: border-box;
   display: block;
 }
 
@@ -1173,6 +1209,9 @@ header {
   align-items: flex-start;
   gap: 20px; 
   width: auto;
+    overflow: hidden;
+      margin: 0 auto;
+    padding: 20px;
 }
 /* ===================== Контейнер для блоку ===================== */
 .cont__box {
@@ -1192,8 +1231,10 @@ header {
   padding: 40px;
   color: #800000;
   display: flex;
-  align-items: center;
+  align-items:center;
   text-align: left;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* ===================== Права частина (форма) ===================== */
@@ -1360,12 +1401,13 @@ header {
 
 /* Заголовок */
 .about__title {
-  font-size: 4rem;
+  font-size: 70px;
   letter-spacing: 4px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 10px;
   color: #f9e8d9;
+      font-family: "Arsenal SC", sans-serif;
   animation: fadeInDown 1.2s ease-out;
 }
 
@@ -1413,11 +1455,11 @@ header {
   }
 
   .about__title {
-    font-size: 3rem;
+    font-size: 30px;
   }
 
   .about__subtitle {
-    font-size: 1.1rem;
+    font-size: 12px;
   }
 }
 
@@ -1450,6 +1492,8 @@ header {
   font-size: 30px;
   color: brown;
   margin-bottom: 10px;
+  font-family: "PT Sans Caption", sans-serif;
+
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -1524,6 +1568,7 @@ header {
   padding: 100px 20px;
   color: #fff;
   position: relative;
+
 
 }
 
@@ -1616,17 +1661,6 @@ header {
 
 /* booking -- page */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-}
 
 .booking__page{
   position: relative;
