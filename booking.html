@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронювання номерів - Готель</title>
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">  <header class="header">
+</head>
+<body>
+    <div class="container">
+      <img src="./image.png" alt="лого" class="header__logo">
+
+      <!-- Десктопна навігація -->
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li><a href="#home">Головна</a></li>
+          <li><a href="./services.html" target="_self">Послуги</a></li>
+          <li><a  class="active"  href="./booking.html">Бронювання номерів</a></li>
+          <li><a href="./about.html">Про нас</a></li>
+          <li><a href="./contacts.html">Контакти</a></li>
+        </ul>
+        <button class="btn__book">Забронювати</button>
+      </nav>
+
+      <!-- Нова кнопка меню -->
+      <button class="menu-button">
+        <span class="button-icon">
+          <span class="but-icon"></span>
+        </span>
+      </button>
+    </div>
+
+    <!-- Мобільне меню -->
+    <nav class="mobile-menu">
+      <ul>
+        <li><a class="active" href="#home">Головна</a></li>
+        <li><a href="./services.html" target="_self">Послуги</a></li>
+        <li><a href="./booking.html">Бронювання номерів</a></li>
+        <li><a href="./about.html">Про нас</a></li>
+        <li><a href="./contacts.html">Контакти</a></li>
+      </ul>
+      <button class="btn__book">Забронювати</button>
+    </nav>
+  </header>
+
+
+
+
+
+
+
+
+    <main>
+        <section class="booking__page">
+            <div class="booking-container container">
+                <!-- Ліва частина - номери -->
+                <div class="rooms-section">
+                    <h1>Наші номери</h1>
+                    
+                    <div class="room-card available" data-type="standard" data-max-guests="2" data-price="1500">
+                        <img src="./img/room2.jpg" alt="Стандартний номер">
+                        <div class="room-info">
+                            <h3>Стандартний номер</h3>
+                            <p>Зручний номер з двоспальним ліжком</p>
+                            <ul>
+                                <li>✓ Кондиціонер</li>
+                                <li>✓ Wi-Fi</li>
+                                <li>✓ Телевізор</li>
+                            </ul>
+                            <div class="price">1500 грн/ніч</div>
+                            <div class="capacity">До 2 гостей</div>
+                        </div>
+                    </div>
+
+                    <div class="room-card available" data-type="comfort" data-max-guests="3" data-price="2200">
+                        <img src="./img/room.jpg" alt="Комфорт номер">
+                        <div class="room-info">
+                            <h3>Комфорт номер</h3>
+                            <p>Просторий номер з окремою вітальнею</p>
+                            <ul>
+                                <li>✓ Кондиціонер</li>
+                                <li>✓ Wi-Fi</li>
+                                <li>✓ Міні-бар</li>
+                                <li>✓ Балкон</li>
+                            </ul>
+                            <div class="price">2200 грн/ніч</div>
+                            <div class="capacity">До 3 гостей</div>
+                        </div>
+                    </div>
+
+                    <div class="room-card available" data-type="luxury" data-max-guests="4" data-price="3500">
+                        <img src="./img/room3.jpg" alt="Люкс номер">
+                        <div class="room-info">
+                            <h3>Люкс номер</h3>
+                            <p>Розкішний номер з джакузі та видом на море</p>
+                            <ul>
+                                <li>✓ Кондиціонер</li>
+                                <li>✓ Wi-Fi</li>
+                                <li>✓ Міні-бар</li>
+                                <li>✓ Джакузі</li>
+                                <li>✓ Сніданок включено</li>
+                            </ul>
+                            <div class="price">3500 грн/ніч</div>
+                            <div class="capacity">До 4 гостей</div>
+                        </div>
+                    </div>
+                    <div class="room-card available" data-type="luxury" data-max-guests="5" data-price="6500">
+                        <img src="./img/room4.jpg" alt="Люкс номер">
+                        <div class="room-info">
+                            <h3>Люкс номер</h3>
+                            <p>Розкішний номер з джакузі та видом на море</p>
+                            <ul>
+                                <li>✓ Кондиціонер</li>
+                                <li>✓ Wi-Fi</li>
+                                <li>✓ Джакузі</li>
+                                <li>✓ Сніданок включено</li>
+                            </ul>
+                            <div class="price">6500 грн/ніч</div>
+                            <div class="capacity">До 5 гостей</div>
+                        </div>
+                    </div>
+                    
+                
+                    <div class="room-card available" data-type="standard" data-max-guests="6" data-price="8500">
+                        <img src="./img/room5.jpg" alt="Стандарт номер">
+                        <div class="room-info">
+                            <h3>Стандарт номер</h3>
+                            <p>Розкішний номер з джакузі та видом на море</p>
+                            <ul>
+                                <li>✓ Кондиціонер</li>
+                                <li>✓ Wi-Fi</li>
+                                <li>✓ Міні-бар</li>
+                                <li>✓ Джакузі</li>
+                            </ul>
+                            <div class="price">8500 грн/ніч</div>
+                            <div class="capacity">До 6 гостей</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Права частина - фіксована форма -->
+                <div class="booking-sidebar">
+                    <!-- Форма бронювання -->
+                    <div class="booking-form">
+                        <h2>Бронювання</h2>
+                        
+                        <div class="form-group">
+                            <label>Дата заїзду:</label>
+                            <input type="date" id="checkin-date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Дата виїзду:</label>
+                            <input type="date" id="checkout-date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Кількість гостей:</label>
+                            <select id="guests-count">
+                                <option value="1">1</option>
+                                <option value="2" selected>2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+
+                        <div class="selected-room">
+                            <h3>Обраний номер:</h3>
+                            <div id="selected-room-info">Не обрано</div>
+                            <div id="price-calculation"></div>
+                        </div>
+
+                        <button class="book-btn" onclick="bookRoom()">Забронювати</button>
+                    </div>
+
+                    <!-- Віджет погоди -->
+                    <div class="weather">
+                        <a class="weatherwidget-io" href="https://forecast7.com/uk/49d8424d03/lviv/" 
+                        data-label_1="Львів" 
+                        data-label_2="Погода" 
+                        data-theme="original" >Львів Погода</a>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Спливаюче повідомлення -->
+            <div id="booking-modal" class="modal">
+                <div class="modal-content">
+                    <h2>Бронювання успішне!</h2>
+                    <p>Ваше бронювання зафіксовано. Наш менеджер зв'яжеться з вами протягом 30 хвилин для підтвердження.</p>
+                    <button onclick="closeModal()">Гаразд</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+            
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer__container container">
+    
+    <!-- Верхня частина футера -->
+    <div class="footer__top">
+      <!-- Соціальні мережі -->
+      <div class="footer__social">
+        <h4>Слідкуйте за нами</h4>
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <i class="lab la-instagram"></i>              
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <i class="lab la-facebook"></i>              
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <i class="lab la-whatsapp"></i>
+              
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <i class="lab la-telegram"></i>
+              
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Контактна інформація -->
+      <div class="footer__contacts">
+        <h4>Контакти</h4>
+        <div class="contact__item">
+          <i class="bi bi-telephone-fill"></i>
+          <a href="tel:+38052364426">+38 (052) 364-42-26</a>
+        </div>
+        <div class="contact__item">
+          <i class="bi bi-envelope-fill"></i>
+          <a href="mailto:knbnkdnkd@gmail.com">knbnkdnkd@gmail.com</a>
+        </div>
+        <div class="contact__item">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span>м. Київ, вул. Готельна, 123</span>
+        </div>
+      </div>
+
+      <!-- Швидкі посилання -->
+      <div class="footer__links">
+        <h4>Навігація</h4>
+        <ul class="links__list">
+          <li><a href="#home">Головна</a></li>
+          <li><a href="#services">Послуги</a></li>
+          <li><a href="#booking">Бронювання</a></li>
+          <li><a href="#about">Про нас</a></li>
+          <li><a href="#contact">Контакти</a></li>
+        </ul>
+      </div>
+
+      <!-- Години роботи -->
+      <div class="footer__hours">
+        <h4>Години роботи</h4>
+        <div class="hours__item">
+          <span>Пн-Пт:</span>
+          <span>08:00 - 22:00</span>
+        </div>
+        <div class="hours__item">
+          <span>Сб-Нд:</span>
+          <span>09:00 - 20:00</span>
+        </div>
+        <div class="hours__item">
+          <span>Рецепція:</span>
+          <span>Цілодобово</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Нижня частина футера -->
+    <div class="footer__bottom">
+      <div class="footer__copyright">
+        <p>&copy; 2025 UNBROKEN Hotel. Усі права захищені.</p>
+      </div>
+      <div class="footer__developer">
+        <p>Зроблено з <i class="bi bi-heart-fill"></i> для гостей</p>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
