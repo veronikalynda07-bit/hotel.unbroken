@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Бронювання номерів - Готель</title>
     <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">  <header class="header">
+      <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">  <header class="header">
 </head>
 <body>
     <div class="container">
@@ -14,14 +16,14 @@
       <!-- Десктопна навігація -->
       <nav class="header__nav">
         <ul class="header__list">
-          <li><a href="#home">Головна</a></li>
-          <li><a href="./services.html" target="_self">Послуги</a></li>
-          <li><a  class="active"  href="./booking.html">Бронювання номерів</a></li>
-          <li><a href="./about.html">Про нас</a></li>
-          <li><a href="./contacts.html">Контакти</a></li>
+          <li><a class="a__list" href="./index.html">Головна</a></li>
+          <li><a class="a__list" href="./services.html" target="_self">Послуги</a></li>
+          <li><a class="a__list active"  href="./booking.html">Бронювання номерів</a></li>
+          <li><a class="a__list" href="./about.html">Про нас</a></li>
+          <li><a class="a__list" href="./contacts.html">Контакти</a></li>
         </ul>
-        <button class="btn__book">Забронювати</button>
-      </nav>
+            <a href="./booking.html" class="btn__book">Забронювати</a>
+        </nav>
 
       <!-- Нова кнопка меню -->
       <button class="menu-button">
@@ -40,7 +42,7 @@
         <li><a href="./about.html">Про нас</a></li>
         <li><a href="./contacts.html">Контакти</a></li>
       </ul>
-      <button class="btn__book">Забронювати</button>
+        <a href="./booking.html" class="btn__book">Забронювати</a>
     </nav>
   </header>
 
@@ -56,7 +58,6 @@
             <div class="booking-container container">
                 <!-- Ліва частина - номери -->
                 <div class="rooms-section">
-                    <h1>Наші номери</h1>
                     
                     <div class="room-card available" data-type="standard" data-max-guests="2" data-price="1500">
                         <img src="./img/room2.jpg" alt="Стандартний номер">
@@ -217,12 +218,12 @@
         <h4>Слідкуйте за нами</h4>
         <ul class="social__list">
           <li class="social__item">
-            <a href="#" class="social__link">
+            <a href="https://www.instagram.com/vlyndaaa?igsh=dXQ5a3BrM216aTU0" class="social__link">
               <i class="lab la-instagram"></i>              
             </a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link">
+            <a href="https://www.facebook.com/veronika.lynda.1?locale=uk_UA" class="social__link">
               <i class="lab la-facebook"></i>              
             </a>
           </li>
@@ -245,16 +246,17 @@
       <div class="footer__contacts">
         <h4>Контакти</h4>
         <div class="contact__item">
-          <i class="bi bi-telephone-fill"></i>
           <a href="tel:+38052364426">+38 (052) 364-42-26</a>
         </div>
         <div class="contact__item">
-          <i class="bi bi-envelope-fill"></i>
-          <a href="mailto:knbnkdnkd@gmail.com">knbnkdnkd@gmail.com</a>
+          <a href="mailto:hotel.unbroken@gmail.com">hotel.unbroken@gmail.com</a>
         </div>
         <div class="contact__item">
-          <i class="bi bi-geo-alt-fill"></i>
-          <span>м. Київ, вул. Готельна, 123</span>
+          <a href="mailto:hotel.unbroken@gmail.com">veronika.lynda.pp.2024.lpnu.ua</a>
+
+        </div>
+        <div class="contact__item">
+          <span>Україна, м. Закарпаття, вул. Незламна 24</span>
         </div>
       </div>
 
@@ -262,11 +264,11 @@
       <div class="footer__links">
         <h4>Навігація</h4>
         <ul class="links__list">
-          <li><a href="#home">Головна</a></li>
-          <li><a href="#services">Послуги</a></li>
-          <li><a href="#booking">Бронювання</a></li>
-          <li><a href="#about">Про нас</a></li>
-          <li><a href="#contact">Контакти</a></li>
+          <li><a href="./index.html">Головна</a></li>
+          <li><a href="./services.html">Послуги</a></li>
+          <li><a href="./booking.html">Бронювання</a></li>
+          <li><a href="./about.html">Про нас</a></li>
+          <li><a href="./contacts.html">Контакти</a></li>
         </ul>
       </div>
 
@@ -294,7 +296,7 @@
         <p>&copy; 2025 UNBROKEN Hotel. Усі права захищені.</p>
       </div>
       <div class="footer__developer">
-        <p>Зроблено з <i class="bi bi-heart-fill"></i> для гостей</p>
+        <p>Зробила -- Линда Вероніка</p>
       </div>
     </div>
 
