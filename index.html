@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="uk">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Unbroken</title>
+  <title>Головна</title>
+
   <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">  <header class="header">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
 </head>
 <body>
+
+  <header class="header">
+
     <div class="container">
       <img src="./image.png" alt="лого" class="header__logo">
 
       <!-- Десктопна навігація -->
       <nav class="header__nav">
         <ul class="header__list">
-          <li><a class="active" href="#home">Головна</a></li>
-          <li><a href="./services.html" target="_self">Послуги</a></li>
-          <li><a href="./booking.html">Бронювання номерів</a></li>
-          <li><a href="./about.html">Про нас</a></li>
-          <li><a href="./contacts.html">Контакти</a></li>
+          <li><a class="a__list active" href="#home">Головна</a></li>
+          <li><a class="a__list" href="./services.html" target="_self">Послуги</a></li>
+          <li><a class="a__list" href="./booking.html">Бронювання номерів</a></li>
+          <li><a class="a__list" href="./about.html">Про нас</a></li>
+          <li><a class="a__list" href="./contacts.html">Контакти</a></li>
         </ul>
-        <button class="btn__book">Забронювати</button>
+          <a href="./booking.html" class="btn__book">Забронювати</a>
       </nav>
 
       <!-- Нова кнопка меню -->
@@ -41,7 +49,7 @@
         <li><a href="./about.html">Про нас</a></li>
         <li><a href="./contacts.html">Контакти</a></li>
       </ul>
-      <button class="btn__book">Забронювати</button>
+          <a href="./booking.html" class="btn__book">Забронювати</a>
     </nav>
   </header>
 
@@ -56,47 +64,48 @@
         <!-- Контент поверх відео -->
         <div class="video-content">
           <div class="header__container">
-            <p>Simple - Unique - Friendly</p>
-            <h1>Make Yourself At Home<br />In Our <span>Hotel</span>.</h1>
+            <p>ТИ - ПРИРОДА - КОМФОРТ</p>
+            <h1>найкраще місце для відпочинку<br />ти знайдеш в нашому<span> готелі</span></h1>
           </div>
+
+
+
 
           <!-- Форма бронювання -->
-          <div class="booking__container">
-            <form action="" class="booking__form">
+          <!-- Форма бронювання -->
+              <section class="booking">
+                <div class="booking__container container">
+                  <form action="#" class="booking__form">
 
-              <div class="input__group">
+                    <div class="input__group">
+                      <label for="checkin-date">Дата заїзду:</label>
+                      <input type="date" id="checkin-date" required class="input">
+                    </div>
 
-                <label for="check-in">CHECK-IN</label>
-                <input type="date" name="in" id="in" class="input">
+                    <div class="input__group">
+                      <label for="checkout-date">Дата виїзду:</label>
+                      <input type="date" id="checkout-date" required class="input">
+                    </div>
 
-              </div>
+                    <div class="input__group">
+                      <label for="guests-count">Кількість гостей:</label>
+                      <select id="guests-count" class="input">
+                        <option value="1">1</option>
+                        <option value="2" selected>2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                      </select>
+                    </div>
 
-              <div class="input__group">
+                    <div class="input__group input__btn">
+                          <a href="./booking.html" class="btn">Забронювати</a>
+                    </div>
+                  </form>
+                </div>
+              </section>
 
-                <label for="check-out">CHECK-OUT</label>
-                <input type="date" name="out" id="out" class="input">
-
-              </div>
-
-              <div class="input__group">
-
-                <label for="guest">GUEST</label>
-                  <select name="GUEST" id="GUEST" class="input">
-                    <option value="1">1 Дорослий</option>
-                    <option value="2">2 Дорослих</option>
-                    <option value="3">2 Дорослих, 1 дитина</option>
-                    <option value="4">2 Дорослих, 2 дітей</option>
-                    <option value="5">3 Дорослих, 2 дітей</option>
-                    <option value="6">3 Дорослих, 3 дітей</option>
-                  </select>
-
-              </div>
-
-              <div class="input__group input__btn">
-                <button class="btn">CHECK OUT</button>
-              </div>
-            </form>
-          </div>
         </div>
       </div>
     </section>
@@ -123,7 +132,7 @@
             <li>скелелазання</li>
           </ul>
           <div class="line__block"></div>
-          <button class="btn_lm">Дізнатися більше</button>
+        <a href="./services.html" class="btn_lm">Дізнатися більше</a>
         </div>
 
         <div class="block1">
@@ -135,7 +144,7 @@
             <li>люкс</li>
           </ul>
           <div class="line__block"></div>
-          <button class="btn_lm">Дізнатися більше</button>
+        <a href="./booking.html" class="btn_lm">Дізнатися більше</a>
         </div>
 
         <div class="block1">
@@ -147,7 +156,7 @@
             <li>оздоровчий центр</li>
           </ul>
           <div class="line__block"></div>
-          <button class="btn_lm">Дізнатися більше</button>
+        <a href="./services.html" class="btn_lm">Дізнатися більше</a>
         </div>
       </div>
     </div>
@@ -167,12 +176,12 @@
         <h4>Слідкуйте за нами</h4>
         <ul class="social__list">
           <li class="social__item">
-            <a href="#" class="social__link">
+            <a href="https://www.instagram.com/vlyndaaa?igsh=dXQ5a3BrM216aTU0" class="social__link">
               <i class="lab la-instagram"></i>              
             </a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link">
+            <a href="https://www.facebook.com/veronika.lynda.1?locale=uk_UA" class="social__link">
               <i class="lab la-facebook"></i>              
             </a>
           </li>
@@ -195,16 +204,17 @@
       <div class="footer__contacts">
         <h4>Контакти</h4>
         <div class="contact__item">
-          <i class="bi bi-telephone-fill"></i>
           <a href="tel:+38052364426">+38 (052) 364-42-26</a>
         </div>
         <div class="contact__item">
-          <i class="bi bi-envelope-fill"></i>
-          <a href="mailto:knbnkdnkd@gmail.com">knbnkdnkd@gmail.com</a>
+          <a href="mailto:hotel.unbroken@gmail.com">hotel.unbroken@gmail.com</a>
         </div>
         <div class="contact__item">
-          <i class="bi bi-geo-alt-fill"></i>
-          <span>м. Київ, вул. Готельна, 123</span>
+          <a href="mailto:hotel.unbroken@gmail.com">veronika.lynda.pp.2024.lpnu.ua</a>
+
+        </div>
+        <div class="contact__item">
+          <span>Україна, м. Закарпаття, вул. Незламна 24</span>
         </div>
       </div>
 
@@ -212,11 +222,11 @@
       <div class="footer__links">
         <h4>Навігація</h4>
         <ul class="links__list">
-          <li><a href="#home">Головна</a></li>
-          <li><a href="#services">Послуги</a></li>
-          <li><a href="#booking">Бронювання</a></li>
-          <li><a href="#about">Про нас</a></li>
-          <li><a href="#contact">Контакти</a></li>
+          <li><a href="./index.html">Головна</a></li>
+          <li><a href="./services.html">Послуги</a></li>
+          <li><a href="./booking.html">Бронювання</a></li>
+          <li><a href="./about.html">Про нас</a></li>
+          <li><a href="./contacts.html">Контакти</a></li>
         </ul>
       </div>
 
@@ -244,7 +254,7 @@
         <p>&copy; 2025 UNBROKEN Hotel. Усі права захищені.</p>
       </div>
       <div class="footer__developer">
-        <p>Зроблено з <i class="bi bi-heart-fill"></i> для гостей</p>
+        <p>Зробила -- Линда Вероніка</p>
       </div>
     </div>
 
