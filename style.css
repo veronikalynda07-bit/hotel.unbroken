@@ -290,11 +290,6 @@ header {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-
-  /* Головне — зробити flex-контейнером */
-  display: flex;
-  justify-content: center; /* по горизонталі */
-  align-items: center;     /* по вертикалі */
 }
 
 .background-video {
@@ -304,7 +299,6 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 0;
 }
 
 .video-overlay {
@@ -320,16 +314,25 @@ header {
 
 /* Контент поверх відео */
 .video-content {
-  position: relative; /* лишаємо у потоці, але поверх відео */
-  z-index: 2;         /* щоб було над overlay */
-  text-align: center;
-  width: 100%;
-  max-width: 90%;   /* щоб текст не розтягувався на всю ширину */
-  color: white;
+  /* position: relative;
+  z-index: 2;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: auto 20px;
+  margin: 70px; */
+  position: absolute; 
+  top: 50%;           
+  left: 50%;        
+  transform: translate(-50%, -50%); 
+  z-index: 2;
+  text-align: center;
+    justify-content: center;
+  margin: 0;
+
+  width: 90%;
 }
 
 .header__container {
