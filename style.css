@@ -22,7 +22,7 @@ body {
   font-family: "EB Garamond", serif;
   color: rgb(32, 4, 4);
   background: #f9f9f9;
-  font-size: 20px;
+  font-size: 22px;
 
 }
 
@@ -45,7 +45,7 @@ ul {
   list-style: none;
 }
 
-/* ======== Хедер ======== */
+/* ======== Header ======== */
 header {
   position: fixed;
   top: 0;
@@ -56,7 +56,6 @@ header {
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.38);
   z-index: 100;
   padding: 20px 0;
-  transition: background 0.3s ease;
 }
 
 .header .container {
@@ -99,7 +98,7 @@ header {
 .header__nav .a__list:hover,
 .header__nav  .active {
   opacity: 0.8;
-  color: var(--secondary-color);
+  color: #e32c2c
 }
 
 /* ======== Кнопка бронювання ======== */
@@ -116,7 +115,7 @@ header {
   border-radius: 30px;
   border: none;
   cursor: pointer;
-  color: var(--white);
+  color: white;
   transition: all 0.3s ease;
 }
 
@@ -235,7 +234,7 @@ header {
 
 .mobile-menu ul li a {
   color: #f8f0e3;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 300;
   text-transform: capitalize;
   display: block;
@@ -268,17 +267,24 @@ header {
   .btn__book {
     width: 130px;
     height: 40px;
-    font-size: 15px;
+    font-size: 18px;
   }
   .mobile-menu ul li a {
-    font-size: 14px;
+    font-size: 17px;
   }
 }
 
 
+
+
+
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
 /* ======== Відео ======== */
 .welcome {
-  position: relative;
+  position:relative;
   margin-top: -10px;
 }
 .main{
@@ -326,7 +332,7 @@ header {
   position: absolute; 
   top: 50%;           
   left: 50%;        
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); 
   z-index: 2;
   text-align: center;
     justify-content: center;
@@ -366,11 +372,23 @@ header {
   color: var(--primary-color);
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /* Форма бронювання */
 /* ===== Загальний контейнер ===== */
 .booking__container {
   width: 100%;
   margin: 0 auto; /* Центрування */
+  padding: 0 0px;     /* Без відступів */
 }
 
 
@@ -386,6 +404,7 @@ header {
   gap: 30px;
   flex-wrap: wrap;
   transition: all 0.3s ease;
+  box-sizing: border-box; 
  justify-content: center;
   margin: 0;
   width: 100%;
@@ -504,7 +523,7 @@ header {
   height: 50px;
   width: 100%;
   background-color: brown;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
 }
 
 .detail__content {
@@ -785,7 +804,6 @@ header {
 }
 
 .footer__container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -798,7 +816,7 @@ header {
   margin-bottom: 40px;
   padding-bottom: 40px;
   border-bottom: 1px solid rgba(248, 240, 227, 0.1);
-}
+}   
 
 .footer h4 {
   color: #d4c4a8;
@@ -953,13 +971,9 @@ header {
 .footer__developer i {
   color: #ff6b6b;
   margin: 0 5px;
-  animation: heartbeat 2s infinite;
 }
 
-@keyframes heartbeat {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-}
+
 
 /* Адаптивність */
 @media (max-width: 768px) {
@@ -1213,6 +1227,21 @@ header {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ===================== Основний блок контакту ===================== */
 .contact__page {
   position: relative;
@@ -1442,7 +1471,7 @@ header {
 
 /* Підзаголовок */
 .about__subtitle {
-  font-size: 1.3rem;
+  font-size: 20px;
   color: #f1f1f1;
   opacity: 0.9;
   margin-bottom: 60px;
@@ -1484,11 +1513,11 @@ header {
   }
 
   .about__title {
-    font-size: 30px;
+    font-size: 32px;
   }
 
   .about__subtitle {
-    font-size: 12px;
+    font-size: 18px;
   }
 }
 
@@ -1534,9 +1563,8 @@ header {
   margin-bottom: 60px;
 }
 
-/* ====== TEAM SECTION ====== */
+/* ====== команда ====== */
 .team__section {
-  background: linear-gradient(180deg, #fefefe 0%, #f2f2f2 100%);
   padding: 100px 20px;
 }
 
@@ -1742,6 +1770,27 @@ header {
     box-shadow: 0 2px 10px rgba(188, 42, 42, 0.8);
 
 }
+.video {
+  position: relative;
+  width: 100%;
+  max-width: 700px; 
+  aspect-ratio: 16 / 9; /* автоматично робить висоту пропорційною */
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Робимо iframe заповнюючим */
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+
 
 .room-card img {
     width: 300px;
@@ -1865,8 +1914,9 @@ header {
     background: #8B4513;
 }
 
-
-
+.weather{
+  border-radius: 15px;
+}
 .details {
     display: flex;
     justify-content: space-around;
@@ -1929,4 +1979,3 @@ header {
         width: 100%;
     }
 }
-
