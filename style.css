@@ -813,6 +813,7 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 40px;
+  width: 1200px;
   margin-bottom: 40px;
   padding-bottom: 40px;
   border-bottom: 1px solid rgba(248, 240, 227, 0.1);
@@ -1979,3 +1980,4 @@ header {
         width: 100%;
     }
 }
+
