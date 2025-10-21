@@ -806,8 +806,7 @@ header {
 .footer__container {
   margin: 0 auto;
   padding: 0 20px;
-max-width: 1200px; /* замість width */
-  width: 100%;
+
 }
 
 /* Верхня частина футера */
@@ -1981,6 +1980,7 @@ max-width: 1200px; /* замість width */
         width: 100%;
     }
 }
+
 
 
 
